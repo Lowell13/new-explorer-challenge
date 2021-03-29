@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nec/score/widget/EcoTab.dart';
 import 'package:nec/score/widget/TrophyTab.dart';
 import 'package:nec/score/widget/WorldTab.dart';
+import 'package:nec/widget/drawer.dart';
 
 class Score extends StatefulWidget {
   @override
@@ -19,7 +20,7 @@ class _ScoreState extends State<Score> {
         child: Scaffold(
             appBar: AppBar(
             ),
-            drawer: Drawer(),
+            drawer: drawer(context),
             body: Column(
               children: [
                 Text("Score", style: Theme.of(context).textTheme.headline1,),
@@ -60,11 +61,11 @@ class _ScoreState extends State<Score> {
 
   Widget customTab(int tab) {
     if (tab == 1)
-      return EcoTab();
+      return EcoTab(context);
     if (tab == 2)
       return TrophyTab(context);
     if (tab == 3)
-      return WorldTab();
+      return WorldTab(context);
     else return Text("There is an error here ! D:");
   }
 }
