@@ -1,5 +1,65 @@
 import 'package:flutter/material.dart';
 
 Widget TrophyTab(context)  {
-  return Container(child: Text("TrophyTab", style: Theme.of(context).textTheme.bodyText1));
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: [
+      Row(
+        children: [
+          Container(
+              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+              alignment: Alignment.centerRight,
+              width: MediaQuery.of(context).size.width * 0.4,
+              child: Text("37.5", style: Theme.of(context).textTheme.bodyText1)
+          ),
+          Container(
+              alignment: Alignment.centerLeft,
+              child: Text("Parcourus (km)", style: Theme.of(context).textTheme.bodyText1)
+          )
+        ],
+      ),
+      Row(
+        children: [
+          Container(
+              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+              alignment: Alignment.centerRight,
+              width: MediaQuery.of(context).size.width * 0.4,
+              child: Text("6h45", style: Theme.of(context).textTheme.bodyText1)
+          ),
+          Container(
+              alignment: Alignment.centerLeft,
+              child: Text("Temps passé", style: Theme.of(context).textTheme.bodyText1)
+          )
+        ],
+      ),
+      Row(
+        children: [
+          Container(
+              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+              alignment: Alignment.centerRight,
+              width: MediaQuery.of(context).size.width * 0.4,
+              child: Text("265", style: Theme.of(context).textTheme.bodyText1)
+          ),
+          Container(
+              alignment: Alignment.centerLeft,
+              child: Text("Dénivelé positif (m)", style: Theme.of(context).textTheme.bodyText1)
+          )
+        ],
+      ),
+      Row(
+        children: [
+          Container(
+              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+              alignment: Alignment.centerRight,
+              width: MediaQuery.of(context).size.width * 0.4,
+              child: Text("165", style: Theme.of(context).textTheme.bodyText1)
+          ),
+          Container(
+              alignment: Alignment.centerLeft,
+              child: Text("Dénivelé négatif (m)", style: Theme.of(context).textTheme.bodyText1)
+          )
+        ],
+      ),
+    ],
+  );
 }

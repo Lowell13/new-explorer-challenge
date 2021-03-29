@@ -23,7 +23,7 @@ class _ScoreState extends State<Score> {
             drawer: drawer(context),
             body: Column(
               children: [
-                Text("Score", style: Theme.of(context).textTheme.headline1,),
+                Text("Score", style: Theme.of(context).textTheme.headline1),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -32,7 +32,9 @@ class _ScoreState extends State<Score> {
                     customIcon("assets/icons/globe-icon.png", 3),
                   ],
                 ),
-                customTab(showTab),
+                Expanded(
+                    child: customTab(showTab)
+                ),
               ],
             )
         ),
@@ -47,21 +49,13 @@ class _ScoreState extends State<Score> {
           this.showTab = tab;
         });
       },
-      child: Container(
-        width: 50,
-        height: 50,
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage(iconPath)
-            )
-        ),
-      ),
+      child: Image.asset(iconPath, width: 50, height: 50)
     );
   }
 
   Widget customTab(int tab) {
     if (tab == 1)
-      return EcoTab(context);
+      return ecoTab(context);
     if (tab == 2)
       return TrophyTab(context);
     if (tab == 3)
