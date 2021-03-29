@@ -13,11 +13,13 @@ AppBarTheme mainAppBar = AppBarTheme();
 
 TextTheme mainTextTheme = TextTheme(
   headline1: TextStyle(
-    fontSize: 10,
-    color: Colors.red,
+    fontSize: 40,
+    fontWeight: FontWeight.normal,
+    color: Colors.black,
   ),
   bodyText1: TextStyle(
-    fontSize: 12,
-    color: Colors.green
+    fontSize: 20,
+    color: Colors.black,
+    fontWeight: FontWeight.w300,
   )
 );

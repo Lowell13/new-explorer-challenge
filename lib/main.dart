@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nec/routes/routes.dart';
 import 'package:nec/style/theme.dart';
 
 void main() {
@@ -10,28 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: mainTheme,
       debugShowCheckedModeBanner: false,
-      home: SafeArea(
-        child: Scaffold(
-          body: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Text("Hello"),
-              Text("Hello"),
-              Text("Hello"),
-              Text("Hello"),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Text("Hello"),
-                  Text("Hello"),
-                  Text("Hello"),
-                ],
-              )
-            ],
-          ),
-        ),
-      ),
+      initialRoute: '/score',
+      routes: routes,
     );
   }
 }
