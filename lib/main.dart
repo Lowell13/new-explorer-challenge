@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: mainTheme,
-      localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ],
+        localizationsDelegates: [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+        ],
         supportedLocales : [
           Locale('fr', 'FR'),
         ],
@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
           ),
-        ));
+        )
     );
   }
 }
