@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: mainTheme,
       debugShowCheckedModeBanner: false,
-      initialRoute: '/score',
+      initialRoute: '/qsn',
       routes: routes,
     );
   }
