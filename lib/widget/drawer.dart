@@ -6,7 +6,7 @@ Widget drawer(context) {
       children: [
         GestureDetector(
           onTapUp: (_) {
-            Navigator.pushNamed(context, "/account");
+            Navigator.popAndPushNamed(context, "/account");
           },
           child: Row(
             children: [
@@ -17,7 +17,7 @@ Widget drawer(context) {
         ),
         GestureDetector(
           onTapUp: (_) {
-            Navigator.pushNamed(context, "/score");
+            Navigator.popAndPushNamed(context, "/score");
           },
           child: Row(
             children: [
@@ -28,7 +28,7 @@ Widget drawer(context) {
         ),
         GestureDetector(
           onTapUp: (_) {
-            Navigator.pushNamed(context, "/proximity");
+            Navigator.popAndPushNamed(context, "/proximity");
           },
           child: Row(
             children: [
@@ -39,7 +39,7 @@ Widget drawer(context) {
         ),
         GestureDetector(
           onTapUp: (_) {
-            Navigator.pushNamed(context, "/france");
+            Navigator.popAndPushNamed(context, "/france");
           },
           child: Row(
             children: [
@@ -50,7 +50,7 @@ Widget drawer(context) {
         ),
         GestureDetector(
           onTapUp: (_) {
-            Navigator.pushNamed(context, "/international");
+            Navigator.popAndPushNamed(context, "/international");
           },
           child: Row(
             children: [
@@ -61,7 +61,7 @@ Widget drawer(context) {
         ),
         GestureDetector(
           onTapUp: (_) {
-            Navigator.pushNamed(context, "/mystery");
+            Navigator.popAndPushNamed(context, "/mystery");
           },
           child: Row(
             children: [
@@ -72,7 +72,7 @@ Widget drawer(context) {
         ),
         GestureDetector(
           onTapUp: (_) {
-            Navigator.pushNamed(context, "/qsn");
+            Navigator.popAndPushNamed(context, "/qsn");
           },
           child: Row(
             children: [
@@ -83,7 +83,7 @@ Widget drawer(context) {
         ),
         GestureDetector(
           onTapUp: (_) {
-            Navigator.pushNamed(context, "/logout");
+            Navigator.popAndPushNamed(context, "/logout");
           },
           child: Row(
             children: [
