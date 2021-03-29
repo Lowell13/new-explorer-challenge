@@ -11,7 +11,18 @@ Widget drawer(context) {
           child: Row(
             children: [
               Image.asset("assets/icons/account-icon.png", width: 50, height: 50),
-              Text("Account", style: Theme.of(context).textTheme.bodyText1,),
+              Text("Compte", style: Theme.of(context).textTheme.bodyText1),
+            ],
+          ),
+        ),
+        GestureDetector(
+          onTapUp: (_) {
+            Navigator.pushNamed(context, "/score");
+          },
+          child: Row(
+            children: [
+              Image.asset("assets/icons/score-icon.png", width: 50, height: 50),
+              Text("Score", style: Theme.of(context).textTheme.bodyText1),
             ],
           ),
         ),

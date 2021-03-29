@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nec/widget/drawer.dart';
 
 class Qsn extends StatelessWidget {
   @override
@@ -6,6 +7,8 @@ class Qsn extends StatelessWidget {
     return MaterialApp(
         home:SafeArea(
             child: Scaffold(
+              appBar: AppBar(),
+                drawer: drawer(context),
                 body: ListView(
                     children: [
                       Column(mainAxisAlignment: MainAxisAlignment.spaceAround,
