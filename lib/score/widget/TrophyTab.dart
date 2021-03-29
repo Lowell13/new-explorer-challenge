@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget TrophyTab(context)  {
+Widget trophyTab(context)  {
   return Column(
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: [

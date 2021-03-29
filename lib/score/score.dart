@@ -57,9 +57,9 @@ class _ScoreState extends State<Score> {
     if (tab == 1)
       return ecoTab(context);
     if (tab == 2)
-      return TrophyTab(context);
+      return trophyTab(context);
     if (tab == 3)
-      return WorldTab(context);
+      return worldTab(context);
     else return Text("There is an error here ! D:");
   }
 }

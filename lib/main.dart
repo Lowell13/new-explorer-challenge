@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:nec/pages/sing_in/sign_in.dart';
 import 'package:nec/routes/routes.dart';
 import 'package:nec/style/theme.dart';
 

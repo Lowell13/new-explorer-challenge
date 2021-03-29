@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget WorldTab(context)  {
+Widget worldTab(context)  {
   return Column(
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: [
