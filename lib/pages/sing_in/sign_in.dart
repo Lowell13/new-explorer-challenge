@@ -146,21 +146,22 @@ class _SignInState extends State<SignIn> {
                         controlsBuilder: (BuildContext context,
                             {onStepContinue, onStepCancel}) {
                           return Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              SizedBox(height: 25.0),
-                              Container(
-                                child: ElevatedButton(
+                                ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                    primary: Colors.cyan,
+                                  ),
                                   child: Text('Précédent'),
                                   onPressed: onStepCancel,
                                 ),
-                              ),
                               ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  primary: Colors.white,
+                                  onPrimary: Colors.cyan,
+                                ),
                                 child: Text('Suivant'),
                                 onPressed: onStepContinue,
-                                style: ElevatedButton.styleFrom(
-                                    primary: Colors.white,
-                                    onPrimary: Colors.blueAccent),
                               ),
                             ],
                           );

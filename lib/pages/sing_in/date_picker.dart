@@ -36,7 +36,7 @@ class _DatePicker extends State<DatePicker> {
         ),
         Ink(
             decoration: const ShapeDecoration(
-                shape: CircleBorder(), color: Colors.lightBlue),
+                shape: CircleBorder(), color: Colors.cyan),
             child: IconButton(
               icon: const Icon(Icons.calendar_today_outlined),
               onPressed: () => _selectDate(context),

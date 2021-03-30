@@ -28,6 +28,9 @@ class Connection extends StatelessWidget {
                         ),
                       ),
                       ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.cyan,
+                        ),
                         child: Text('Se connecter'),
                         onPressed: () {
                           Navigator.pushNamed(context, '/score');
@@ -38,6 +41,8 @@ class Connection extends StatelessWidget {
                 ),
               ),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.cyan,),
                 child: Text('S\'inscrire'),
                 onPressed: () {
                   Navigator.pushNamed(context, '/sign_in');
