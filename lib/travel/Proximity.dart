@@ -12,8 +12,6 @@ class Proximity extends StatefulWidget {
 class _ProximityState extends State<Proximity> {
   var steps = 3;
 
-  // default date
-
   int currentStep = 0;
   bool complete = false;
 
@@ -38,8 +36,7 @@ class _ProximityState extends State<Proximity> {
     return MaterialApp(
         home: SafeArea(
             child: Scaffold(
-                appBar: AppBar(
-                ),
+                appBar: AppBar(),
                 drawer: drawer(context),
                 body: Column(children: <Widget>[
                   complete

@@ -21,9 +21,7 @@ class _ScoreState extends State<Score> {
       theme: mainTheme,
       home: SafeArea(
         child: Scaffold(
-            appBar: AppBar(
-
-            ),
+            appBar: AppBar(),
             drawer: drawer(context),
             body: Column(
               children: [

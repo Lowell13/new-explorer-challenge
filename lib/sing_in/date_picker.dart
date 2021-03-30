@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class DatePicker extends StatefulWidget {
+  final String string;
+
+  DatePicker({this.string});
+
   _DatePicker createState() => _DatePicker();
 }
 
@@ -29,7 +33,7 @@ class _DatePicker extends State<DatePicker> {
     return Row(
       children: [
         Text(
-            "Date de naissance : ${DateFormat('dd-MM-yyyy').format(selectedDate.toLocal())}"),
+            "${widget.string} : ${DateFormat('dd-MM-yyyy').format(selectedDate.toLocal())}"),
         SizedBox(
           height: 20.0,
           width: 25.0,
