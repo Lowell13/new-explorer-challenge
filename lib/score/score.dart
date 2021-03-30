@@ -17,13 +17,11 @@ class _ScoreState extends State<Score> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       theme: mainTheme,
+      debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-            appBar: AppBar(
-
-            ),
+            appBar: AppBar(),
             drawer: drawer(context),
             body: Column(
               children: [
