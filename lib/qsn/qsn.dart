@@ -18,9 +18,10 @@ class Qsn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home:SafeArea(
             child: Scaffold(
-              appBar: AppBar(),
+                appBar: AppBar(),
                 drawer: drawer(context),
                 body: ListView(
                     children: [
@@ -117,15 +118,15 @@ class Qsn extends StatelessWidget {
                               ),
                             ),],
                             options: CarouselOptions(
-                            height: 180.0,
-                            enlargeCenterPage: true,
-                            autoPlay: true,
-                            aspectRatio: 16 / 9,
-                            autoPlayCurve: Curves.fastOutSlowIn,
-                            enableInfiniteScroll: true,
-                            autoPlayAnimationDuration: Duration(milliseconds: 800),
-                            viewportFraction: 0.8,
-                          ),),
+                              height: 180.0,
+                              enlargeCenterPage: true,
+                              autoPlay: true,
+                              aspectRatio: 16 / 9,
+                              autoPlayCurve: Curves.fastOutSlowIn,
+                              enableInfiniteScroll: true,
+                              autoPlayAnimationDuration: Duration(milliseconds: 800),
+                              viewportFraction: 0.8,
+                            ),),
                         ],
                       ),
                     ]

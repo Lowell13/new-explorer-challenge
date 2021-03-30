@@ -16,6 +16,7 @@ class _ScoreState extends State<Score> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
             appBar: AppBar(
