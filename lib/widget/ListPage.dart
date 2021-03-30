@@ -127,7 +127,7 @@ class ListPageState extends State<ListPage> {
                                     child: Padding(
                                       padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                       child: Text(
-                                        'Randonnée gourmande Ile de Bréhat',
+                                        'Randonnée Ile de Bréhat',
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 18,
@@ -251,7 +251,7 @@ class ListPageState extends State<ListPage> {
                                     child: Padding(
                                       padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                       child: Text(
-                                        'Traversée baie Mont-Saint-Michel',
+                                        'Mont-Saint-Michel',
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 18,
