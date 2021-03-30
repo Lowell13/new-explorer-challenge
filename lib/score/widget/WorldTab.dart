@@ -7,7 +7,7 @@ Widget worldTab(context)  {
       Row(
         children: [
           Container(
-              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+              padding: const EdgeInsets.only(right: 10.0),
               alignment: Alignment.centerRight,
               width: MediaQuery.of(context).size.width * 0.4,
               child: Text("2", style: Theme.of(context).textTheme.bodyText1)
@@ -21,7 +21,7 @@ Widget worldTab(context)  {
       Row(
         children: [
           Container(
-              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+              padding: const EdgeInsets.only(right: 10.0),
               alignment: Alignment.centerRight,
               width: MediaQuery.of(context).size.width * 0.4,
               child: Text("5", style: Theme.of(context).textTheme.bodyText1)
@@ -35,7 +35,7 @@ Widget worldTab(context)  {
       Row(
         children: [
           Container(
-              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+              padding: const EdgeInsets.only(right: 10.0),
               alignment: Alignment.centerRight,
               width: MediaQuery.of(context).size.width * 0.4,
               child: Text("2", style: Theme.of(context).textTheme.bodyText1)
@@ -49,7 +49,7 @@ Widget worldTab(context)  {
       Row(
         children: [
           Container(
-              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+              padding: const EdgeInsets.only(right: 10.0),
               alignment: Alignment.centerRight,
               width: MediaQuery.of(context).size.width * 0.4,
               child: Text("0", style: Theme.of(context).textTheme.bodyText1)

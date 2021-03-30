@@ -1,0 +1,61 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class Connection extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SafeArea(
+        child: Scaffold(
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Image.asset("assets/Logos/nec-logo.png", width: MediaQuery.of(context).size.width *0.66),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Form(
+                  child: Column(
+                    children: [
+                      TextFormField(
+                        decoration: const InputDecoration(
+                          hintText: "Identifiant",
+                        ),
+                      ),
+                      TextFormField(
+                        decoration: const InputDecoration(
+                          hintText: "Mot de passe",
+                        ),
+                      ),
+                      ElevatedButton(
+                        child: Text('Se connecter'),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/score');
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              ElevatedButton(
+                child: Text('S\'inscrire'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/sign_in');
+                },
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image.asset("assets/icons/instagram-icon.png", width: 50, height: 50),
+                  Image.asset("assets/icons/facebook-icon.png", width: 50, height: 50),
+                  Image.asset("assets/icons/twitter-icon.png", width: 50, height: 50),
+                ],
+              ),
+              Text("Copyright 2021-2022"),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

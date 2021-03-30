@@ -22,36 +22,8 @@ class MyApp extends StatelessWidget {
         ],
         locale: Locale('fr'),
         debugShowCheckedModeBanner: false,
-        initialRoute: '/',
-        routes: routes,
-        home: Builder(
-          builder: (context) => SafeArea(
-            child: Scaffold(
-              body: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  ElevatedButton(
-                    child: Text('Inscription'),
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/sign_in');
-                    },
-                  ),
-                  Text("Hello"),
-                  Text("Hello"),
-                  Text("Hello"),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Text("Hello"),
-                      Text("Hello"),
-                      Text("Hello"),
-                    ],
-                  )
-                ],
-              ),
-            ),
-          ),
-        )
+        initialRoute: '/connection',
+        routes: routes
     );
   }
 }

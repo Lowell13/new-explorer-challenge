@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nec/connection/connection.dart';
 import 'package:nec/score/score.dart';
-import '../qsn.dart';
+import '../qsn/qsn.dart';
 import 'package:nec/pages/sing_in/sign_in.dart';
 
 
@@ -14,4 +15,7 @@ Map<String, WidgetBuilder> routes = {
   '/sign_in': (context) {
     return SignIn();
   },
+  '/connection': (context) {
+    return Connection();
+  }
 };

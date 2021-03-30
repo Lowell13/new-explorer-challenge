@@ -83,7 +83,7 @@ Widget drawer(context) {
         ),
         GestureDetector(
           onTapUp: (_) {
-            Navigator.popAndPushNamed(context, "/logout");
+            Navigator.popAndPushNamed(context, "/connection");
           },
           child: Row(
             children: [

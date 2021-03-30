@@ -14,21 +14,21 @@ class Qsn extends StatelessWidget {
                       Column(mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Padding(
-                            padding: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 20.0),
+                            padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
                             child: Text('Qui sommes nous?', style: Theme.of(context).textTheme.headline1),
                           ),
                           Padding(
-                            padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
+                            padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
                             child: Text('The N.E.C est un challenge de réflexion pour la nouvelle génération suivi d’un défi d’action et de dépassement de soi ouvert à tous.', style: Theme.of(context).textTheme.bodyText1, textAlign: TextAlign.center,),),
                           Padding(
-                            padding: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 20.0),
+                            padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
                             child: Text('Nos Valeurs', style: Theme.of(context).textTheme.headline1),),
                           Padding(
-                            padding: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 20.0),
+                            padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
                             child: Text('Résilience, Optimisme, Partage et le Dépassement de soi', style: Theme.of(context).textTheme.bodyText1, textAlign: TextAlign.center,),
                           ),
                           Padding(
-                            padding: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 20.0),
+                            padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
                             child: Text('Nos Partenaires', style: Theme.of(context).textTheme.headline1),),
                           GridView.count(
                               shrinkWrap: true,
