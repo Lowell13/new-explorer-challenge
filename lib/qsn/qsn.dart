@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:nec/widget/drawer.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+
 
 class Qsn extends StatelessWidget {
+  static String myVideoId = 'nVi8d7hViW4';
+  YoutubePlayerController _controller = YoutubePlayerController(
+    initialVideoId: myVideoId,
+    flags: YoutubePlayerFlags(
+      autoPlay: true,
+      mute: false,
+    ),
+  );
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,7 +25,10 @@ class Qsn extends StatelessWidget {
                         children: [
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
-                            child: Text('Qui sommes nous?', style: Theme.of(context).textTheme.headline1),
+                            child: Text('Qui sommes nous?', style: Theme.of(context).textTheme.headline1),),
+                          YoutubePlayer(
+                            controller: _controller,
+                            liveUIColor: Colors.amber,
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
