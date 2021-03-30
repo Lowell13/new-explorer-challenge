@@ -173,7 +173,7 @@ class ListPageState extends State<ListPage> {
                           Padding(
                             padding: const EdgeInsets.all(2.0),
                             child: Image.asset(
-                                'assets/images/image_list_01.png',
+                                'assets/images/image_list_03.png',
                                 fit: BoxFit.fill
                             ),
                           ),
@@ -184,7 +184,7 @@ class ListPageState extends State<ListPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
-                                    'Finistère',
+                                    'De Nantes à Brest à vélo',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
@@ -235,7 +235,7 @@ class ListPageState extends State<ListPage> {
                           Padding(
                             padding: const EdgeInsets.all(2.0),
                             child: Image.asset(
-                                'assets/images/image_list_01.png',
+                                'assets/images/image_list_04.png',
                                 fit: BoxFit.fill
                             ),
                           ),
@@ -246,7 +246,7 @@ class ListPageState extends State<ListPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
-                                    'Finistère',
+                                    'Traversée baie Mont-Saint-Michel',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
@@ -297,7 +297,7 @@ class ListPageState extends State<ListPage> {
                           Padding(
                             padding: const EdgeInsets.all(2.0),
                             child: Image.asset(
-                                'assets/images/image_list_01.png',
+                                'assets/images/image_list_05.png',
                                 fit: BoxFit.fill
                             ),
                           ),
@@ -308,7 +308,7 @@ class ListPageState extends State<ListPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
-                                    'Finistère',
+                                    'Randonnée à cheval',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
@@ -359,7 +359,7 @@ class ListPageState extends State<ListPage> {
                           Padding(
                             padding: const EdgeInsets.all(2.0),
                             child: Image.asset(
-                                'assets/images/image_list_01.png',
+                                'assets/images/image_list_06.png',
                                 fit: BoxFit.fill
                             ),
                           ),
@@ -370,7 +370,7 @@ class ListPageState extends State<ListPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
-                                    'Finistère',
+                                    'Tour en kayak de mer',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
@@ -421,7 +421,7 @@ class ListPageState extends State<ListPage> {
                           Padding(
                             padding: const EdgeInsets.all(2.0),
                             child: Image.asset(
-                                'assets/images/image_list_01.png',
+                                'assets/images/image_list_07.png',
                                 fit: BoxFit.fill
                             ),
                           ),
@@ -432,7 +432,7 @@ class ListPageState extends State<ListPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
-                                    'Finistère',
+                                    'Trecking Côtes d\'Armor',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
@@ -483,7 +483,7 @@ class ListPageState extends State<ListPage> {
                           Padding(
                             padding: const EdgeInsets.all(2.0),
                             child: Image.asset(
-                                'assets/images/image_list_01.png',
+                                'assets/images/image_list_08.png',
                                 fit: BoxFit.fill
                             ),
                           ),
@@ -494,7 +494,7 @@ class ListPageState extends State<ListPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
-                                    'Finistère',
+                                    'Trecking Finistère sud',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
