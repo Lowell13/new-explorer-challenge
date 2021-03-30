@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nec/score/widget/EcoTab.dart';
 import 'package:nec/score/widget/TrophyTab.dart';
 import 'package:nec/score/widget/WorldTab.dart';
+import 'package:nec/style/theme.dart';
 import 'package:nec/widget/drawer.dart';
 
 class Score extends StatefulWidget {
@@ -17,9 +18,11 @@ class _ScoreState extends State<Score> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: mainTheme,
       home: SafeArea(
         child: Scaffold(
             appBar: AppBar(
+
             ),
             drawer: drawer(context),
             body: Column(

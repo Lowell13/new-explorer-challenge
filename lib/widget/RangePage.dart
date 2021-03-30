@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class RangePage extends StatefulWidget {
+  final String nextPage;
+
+  RangePage({this.nextPage});
+
   RangePageState createState() => RangePageState();
 }
 
@@ -9,11 +13,7 @@ class RangePageState extends State<RangePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: Column(
+    return Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text(
@@ -30,22 +30,27 @@ class RangePageState extends State<RangePage> {
                 fontSize: 15.0,
               ),
             ),
-            Container(
-              child: Slider(
-                value: _value.toDouble(),
-                min: 1.0,
-                max: 30.0,
-                activeColor: Colors.cyan,
-                inactiveColor: Colors.black,
-                onChanged: (double newValue) {
-                  setState(() {
-                    _value = newValue.round();
-                  });
-                },
-              ),
+            Row(
+              children: [
+                Container(
+                  width: MediaQuery.of(context).size.width *0.70,
+                  child: Slider(
+                    value: _value.toDouble(),
+                    min: 1.0,
+                    max: 30.0,
+                    activeColor: Colors.cyan,
+                    inactiveColor: Colors.black,
+                    onChanged: (double newValue) {
+                      setState(() {
+                        _value = newValue.round();
+                      });
+                    },
+                  ),
+                ),
+              ],
             ),
             Container(
-                height: 550,
+                height: 300,
                 color: Colors.grey,
                 child: Center(
                   child :Text(
@@ -54,7 +59,6 @@ class RangePageState extends State<RangePage> {
                 )
             ),
           ]
-      ),
     );
   }
 }

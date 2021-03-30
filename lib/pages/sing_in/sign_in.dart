@@ -45,7 +45,7 @@ class _SignInState extends State<SignIn> {
                       child: AlertDialog(
                         title: new Text('Confirmation'),
                         content: new Text(
-                            'Inscription confirmée ! Vous recevrez un mail de confirmation dans votre boîte mail.'),
+                            'Inscription terminée ! Vous recevrez bientôt un mail de confirmation dans votre boîte mail.'),
                         actions: [
                           new ElevatedButton(
                               child: new Text('OK'),
@@ -67,6 +67,7 @@ class _SignInState extends State<SignIn> {
                                 : StepState.disabled,
                             content: Column(
                               children: <Widget>[
+                                Text("Identité", style: Theme.of(context).textTheme.headline1),
                                 TextFormField(
                                   decoration: InputDecoration(labelText: 'Nom'),
                                 ),
@@ -96,6 +97,7 @@ class _SignInState extends State<SignIn> {
                                 : StepState.disabled,
                             content: Column(
                               children: <Widget>[
+                                Text("Préférences", style: Theme.of(context).textTheme.headline1),
                                 CheckboxGroup(labels: <String>[
                                   "Dépassement de soi",
                                   "Découverte Culturelle",
@@ -113,6 +115,7 @@ class _SignInState extends State<SignIn> {
                             title: const Text(''),
                             content: Column(
                               children: <Widget>[
+                                Text("Equipements", style: Theme.of(context).textTheme.headline1),
                                 CheckboxGroup(labels: <String>[
                                   "VTT",
                                   "VTC/Vélo route",

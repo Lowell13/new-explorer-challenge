@@ -8,7 +8,7 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Qsn extends StatelessWidget {
   static String myVideoId = 'nVi8d7hViW4';
-  YoutubePlayerController _controller = YoutubePlayerController(
+  final YoutubePlayerController _controller = YoutubePlayerController(
     initialVideoId: myVideoId,
     flags: YoutubePlayerFlags(
       autoPlay: true,
