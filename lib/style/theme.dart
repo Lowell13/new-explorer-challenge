@@ -4,12 +4,15 @@ ThemeData mainTheme = ThemeData(
   appBarTheme: mainAppBar,
   brightness: Brightness.light,
   primaryColor: Colors.cyan,
-  accentColor: Colors.amberAccent,
+  accentColor: Colors.amber[100],
   backgroundColor: Colors.white,
   textTheme: mainTextTheme
 );
 
-AppBarTheme mainAppBar = AppBarTheme();
+AppBarTheme mainAppBar = AppBarTheme(
+  color: Colors.cyan,
+  shadowColor: Colors.black,
+);
 
 TextTheme mainTextTheme = TextTheme(
   headline1: TextStyle(

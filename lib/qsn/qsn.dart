@@ -3,6 +3,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:nec/widget/drawer.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:nec/style/theme.dart';
 
 
 
@@ -18,6 +19,7 @@ class Qsn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        theme: mainTheme,
         debugShowCheckedModeBanner: false,
         home:SafeArea(
             child: Scaffold(
