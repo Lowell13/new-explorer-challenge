@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
+import 'package:nec/pages/ListPage.dart';
 import 'package:nec/widget/RangePage.dart';
 import 'package:nec/widget/drawer.dart';
 import 'package:nec/widget/levelWidget.dart';
@@ -43,7 +44,7 @@ class _ProximityState extends State<Proximity> {
                 drawer: drawer(context),
                 body: Column(children: <Widget>[
                   complete
-                      ? Navigator.of(context).pushNamed("/listPage")
+                      ? Navigator.of(context).pushNamed("/detailPage")
                       : Expanded(
                     child: Stepper(
                       steps: [

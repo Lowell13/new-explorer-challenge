@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nec/connection/connection.dart';
 import 'package:nec/pages/DetailPage.dart';
+import 'package:nec/proximity/Proximity.dart';
+import 'package:nec/pages/DetailPage.dart';
 import 'package:nec/pages/ListPage.dart';
 import 'package:nec/proximity/Proximity.dart';
 import 'package:nec/score/score.dart';
@@ -20,6 +22,13 @@ Map<String, WidgetBuilder> routes = {
   },
   '/connection': (context) {
     return Connection();
+  },
+  '/proximity': (context) {
+    return Proximity();
+  },
+  '/detailPage': (context) {
+    return DetailPage();
+  },
   },
   '/proximity': (context) {
     return Proximity();
