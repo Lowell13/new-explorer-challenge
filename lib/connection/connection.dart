@@ -46,9 +46,9 @@ class Connection extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Image.asset("assets/icons/flat_icon_instagram.png", width: 35, height: 35),
-                  Image.asset("assets/icons/flat_icon_facebook.png", width: 35, height: 35),
-                  Image.asset("assets/icons/flat_icon_twitter.png", width: 35, height: 35),
+                  Image.asset("assets/icons/connection/flat_icon_instagram.png", width: 35, height: 35),
+                  Image.asset("assets/icons/connection/flat_icon_facebook.png", width: 35, height: 35),
+                  Image.asset("assets/icons/connection/flat_icon_twitter.png", width: 35, height: 35),
                 ],
               ),
               Text("Copyright 2021-2022"),
