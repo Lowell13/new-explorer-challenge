@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
+import 'package:nec/style/theme.dart';
 import 'package:nec/widget/RangePage.dart';
 import 'package:nec/widget/drawer.dart';
 import 'package:nec/widget/levelWidget.dart';
@@ -36,10 +37,10 @@ class _ProximityState extends State<Proximity> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: mainTheme,
         home: SafeArea(
             child: Scaffold(
-                appBar: AppBar(
-                ),
+                appBar: AppBar(),
                 drawer: drawer(context),
                 body: Column(children: <Widget>[
                   complete
@@ -90,15 +91,17 @@ class _ProximityState extends State<Proximity> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                            primary: Colors.cyan,),
                               child: Text('Précédent'),
                               onPressed: onStepCancel,
                             ),
                             ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.white,
+                                onPrimary: Colors.cyan),
                               child: Text('Suivant'),
                               onPressed: onStepContinue,
-                              style: ElevatedButton.styleFrom(
-                                  primary: Colors.white,
-                                  onPrimary: Colors.blueAccent),
                             ),
                           ],
                         );
