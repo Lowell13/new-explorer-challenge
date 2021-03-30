@@ -44,7 +44,7 @@ class _ProximityState extends State<Proximity> {
                 drawer: drawer(context),
                 body: Column(children: <Widget>[
                   complete
-                      ? Navigator.of(context).pushNamed("/detailPage")
+                      ? Navigator.of(context).pushNamed("/listPage")
                       : Expanded(
                     child: Stepper(
                       steps: [
