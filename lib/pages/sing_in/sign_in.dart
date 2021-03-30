@@ -148,7 +148,7 @@ class _SignInState extends State<SignIn> {
                           return Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              SizedBox(height: 750.0),
+                              SizedBox(height: 25.0),
                               Container(
                                 child: ElevatedButton(
                                   child: Text('Précédent'),

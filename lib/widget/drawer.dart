@@ -21,7 +21,7 @@ Widget drawer(context) {
           },
           child: Row(
             children: [
-              Image.asset("assets/icons/score-icon.png", width: 50, height: 50),
+              Image.asset("assets/icons/trophy-icon.png", width: 50, height: 50),
               Text("Score", style: Theme.of(context).textTheme.bodyText1),
             ],
           ),
@@ -32,7 +32,7 @@ Widget drawer(context) {
           },
           child: Row(
             children: [
-              Image.asset("assets/icons/proximity-icon.png", width: 50, height: 50),
+              Image.asset("assets/icons/flat_icon_street_view.png", width: 50, height: 50),
               Text("Voyage de proximité", style: Theme.of(context).textTheme.bodyText1),
             ],
           ),
@@ -43,7 +43,7 @@ Widget drawer(context) {
           },
           child: Row(
             children: [
-              Image.asset("assets/icons/france-icon.png", width: 50, height: 50),
+              Image.asset("assets/icons/flat_icon_france.png", width: 50, height: 50),
               Text("Voyage national", style: Theme.of(context).textTheme.bodyText1),
             ],
           ),
@@ -54,7 +54,7 @@ Widget drawer(context) {
           },
           child: Row(
             children: [
-              Image.asset("assets/icons/international-icon.png", width: 50, height: 50),
+              Image.asset("assets/icons/flat_icon_worldwide.png", width: 50, height: 50),
               Text("Voyage international", style: Theme.of(context).textTheme.bodyText1),
             ],
           ),
