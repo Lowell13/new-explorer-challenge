@@ -57,6 +57,7 @@ class ListPageState extends State<ListPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Container(
+                                width: MediaQuery.of(context).size.width * 0.5,
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
@@ -65,6 +66,7 @@ class ListPageState extends State<ListPage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                     ),
+                                    overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
                               ),
@@ -119,6 +121,7 @@ class ListPageState extends State<ListPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Container(
+                                width: MediaQuery.of(context).size.width * 0.5,
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
@@ -127,6 +130,7 @@ class ListPageState extends State<ListPage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                     ),
+                                    overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
                               ),
@@ -181,6 +185,7 @@ class ListPageState extends State<ListPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Container(
+                                width: MediaQuery.of(context).size.width * 0.5,
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
@@ -189,6 +194,7 @@ class ListPageState extends State<ListPage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                     ),
+                                    overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
                               ),
@@ -243,6 +249,7 @@ class ListPageState extends State<ListPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Container(
+                                width: MediaQuery.of(context).size.width * 0.5,
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
@@ -251,6 +258,7 @@ class ListPageState extends State<ListPage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                     ),
+                                    overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
                               ),
@@ -305,6 +313,7 @@ class ListPageState extends State<ListPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Container(
+                                width: MediaQuery.of(context).size.width * 0.5,
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
@@ -313,6 +322,7 @@ class ListPageState extends State<ListPage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                     ),
+                                    overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
                               ),
@@ -367,6 +377,7 @@ class ListPageState extends State<ListPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Container(
+                                width: MediaQuery.of(context).size.width * 0.5,
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
@@ -375,6 +386,7 @@ class ListPageState extends State<ListPage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                     ),
+                                    overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
                               ),
@@ -429,6 +441,7 @@ class ListPageState extends State<ListPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Container(
+                                width: MediaQuery.of(context).size.width * 0.5,
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
@@ -437,6 +450,7 @@ class ListPageState extends State<ListPage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                     ),
+                                    overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
                               ),
@@ -491,6 +505,7 @@ class ListPageState extends State<ListPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Container(
+                                width: MediaQuery.of(context).size.width * 0.5,
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
                                   child: Text(
@@ -499,6 +514,7 @@ class ListPageState extends State<ListPage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                     ),
+                                    overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
                               ),
