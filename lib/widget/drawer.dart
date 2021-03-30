@@ -3,93 +3,118 @@ import 'package:flutter/material.dart';
 Widget drawer(context) {
   return Drawer(
     child: ListView(
+      padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
       children: [
-        GestureDetector(
-          onTapUp: (_) {
-            Navigator.popAndPushNamed(context, "/account");
-          },
-          child: Row(
-            children: [
-              Image.asset("assets/icons/account-icon.png", width: 50, height: 50),
-              Text("Compte", style: Theme.of(context).textTheme.bodyText1),
-            ],
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: GestureDetector(
+            onTapUp: (_) {
+              Navigator.popAndPushNamed(context, "/account");
+            },
+            child: Row(
+              children: [
+                Image.asset("assets/icons/account-icon.png", width: 50, height: 50),
+                Text("Compte", style: Theme.of(context).textTheme.bodyText1),
+              ],
+            ),
           ),
         ),
-        GestureDetector(
-          onTapUp: (_) {
-            Navigator.popAndPushNamed(context, "/score");
-          },
-          child: Row(
-            children: [
-              Image.asset("assets/icons/score-icon.png", width: 50, height: 50),
-              Text("Score", style: Theme.of(context).textTheme.bodyText1),
-            ],
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: GestureDetector(
+            onTapUp: (_) {
+              Navigator.popAndPushNamed(context, "/score");
+            },
+            child: Row(
+              children: [
+                Image.asset("assets/icons/score-icon.png", width: 50, height: 50),
+                Text("Score", style: Theme.of(context).textTheme.bodyText1),
+              ],
+            ),
           ),
         ),
-        GestureDetector(
-          onTapUp: (_) {
-            Navigator.popAndPushNamed(context, "/proximity");
-          },
-          child: Row(
-            children: [
-              Image.asset("assets/icons/proximity-icon.png", width: 50, height: 50),
-              Text("Voyage de proximité", style: Theme.of(context).textTheme.bodyText1),
-            ],
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: GestureDetector(
+            onTapUp: (_) {
+              Navigator.popAndPushNamed(context, "/proximity");
+            },
+            child: Row(
+              children: [
+                Image.asset("assets/icons/proximity-icon.png", width: 50, height: 50),
+                Text("Voyage de proximité", style: Theme.of(context).textTheme.bodyText1),
+              ],
+            ),
           ),
         ),
-        GestureDetector(
-          onTapUp: (_) {
-            Navigator.popAndPushNamed(context, "/france");
-          },
-          child: Row(
-            children: [
-              Image.asset("assets/icons/france-icon.png", width: 50, height: 50),
-              Text("Voyage national", style: Theme.of(context).textTheme.bodyText1),
-            ],
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: GestureDetector(
+            onTapUp: (_) {
+              Navigator.popAndPushNamed(context, "/france");
+            },
+            child: Row(
+              children: [
+                Image.asset("assets/icons/france-icon.png", width: 50, height: 50),
+                Text("Voyage national", style: Theme.of(context).textTheme.bodyText1),
+              ],
+            ),
           ),
         ),
-        GestureDetector(
-          onTapUp: (_) {
-            Navigator.popAndPushNamed(context, "/international");
-          },
-          child: Row(
-            children: [
-              Image.asset("assets/icons/international-icon.png", width: 50, height: 50),
-              Text("Voyage international", style: Theme.of(context).textTheme.bodyText1),
-            ],
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: GestureDetector(
+            onTapUp: (_) {
+              Navigator.popAndPushNamed(context, "/international");
+            },
+            child: Row(
+              children: [
+                Image.asset("assets/icons/international-icon.png", width: 50, height: 50),
+                Text("Voyage international", style: Theme.of(context).textTheme.bodyText1),
+              ],
+            ),
           ),
         ),
-        GestureDetector(
-          onTapUp: (_) {
-            Navigator.popAndPushNamed(context, "/mystery");
-          },
-          child: Row(
-            children: [
-              Image.asset("assets/icons/mystery-icon.png", width: 50, height: 50),
-              Text("Voyage mystère", style: Theme.of(context).textTheme.bodyText1),
-            ],
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: GestureDetector(
+            onTapUp: (_) {
+              Navigator.popAndPushNamed(context, "/mystery");
+            },
+            child: Row(
+              children: [
+                Image.asset("assets/icons/mystery-icon.png", width: 50, height: 50),
+                Text("Voyage mystère", style: Theme.of(context).textTheme.bodyText1),
+              ],
+            ),
           ),
         ),
-        GestureDetector(
-          onTapUp: (_) {
-            Navigator.popAndPushNamed(context, "/qsn");
-          },
-          child: Row(
-            children: [
-              Image.asset("assets/icons/information-icon.png", width: 50, height: 50),
-              Text("Qui sommes-nous ?", style: Theme.of(context).textTheme.bodyText1),
-            ],
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: GestureDetector(
+            onTapUp: (_) {
+              Navigator.popAndPushNamed(context, "/qsn");
+            },
+            child: Row(
+              children: [
+                Image.asset("assets/icons/information-icon.png", width: 50, height: 50),
+                Text("Qui sommes-nous ?", style: Theme.of(context).textTheme.bodyText1),
+              ],
+            ),
           ),
         ),
-        GestureDetector(
-          onTapUp: (_) {
-            Navigator.popAndPushNamed(context, "/connection");
-          },
-          child: Row(
-            children: [
-              Image.asset("assets/icons/logout-icon.png", width: 50, height: 50),
-              Text("Se déconnecter", style: Theme.of(context).textTheme.bodyText1),
-            ],
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: GestureDetector(
+            onTapUp: (_) {
+              Navigator.popAndPushNamed(context, "/connection");
+            },
+            child: Row(
+              children: [
+                Image.asset("assets/icons/logout-icon.png", width: 50, height: 50),
+                Text("Se déconnecter", style: Theme.of(context).textTheme.bodyText1),
+              ],
+            ),
           ),
         )
       ],
