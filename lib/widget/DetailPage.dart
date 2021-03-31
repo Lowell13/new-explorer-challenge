@@ -111,7 +111,9 @@ class DetailPage extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       alignment: Alignment.bottomCenter,
       child: MaterialButton(
-        onPressed: () => {},
+        onPressed: () => {
+          Navigator.pushNamed(context, '/map')
+        },
         color: Colors.cyan,
         child: Text(
           "Go !",
