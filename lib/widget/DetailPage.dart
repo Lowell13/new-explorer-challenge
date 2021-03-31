@@ -138,6 +138,7 @@ class DetailPage extends StatelessWidget {
 
     return MaterialApp(
       theme: mainTheme,
+      debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(),
