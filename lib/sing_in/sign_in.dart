@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
-import 'package:nec/pages/sing_in/date_picker.dart';
+import 'package:nec/sing_in/date_picker.dart';
 
 class SignIn extends StatefulWidget {
   @override
@@ -83,7 +83,7 @@ class _SignInState extends State<SignIn> {
                                     SizedBox(
                                       height: 20.0,
                                     ),
-                                    DatePicker(),
+                                    DatePicker(string: "Date de naissance"),
                                   ],
                                 )
                               ],
@@ -133,13 +133,18 @@ class _SignInState extends State<SignIn> {
                             title: const Text(''),
                             content: Column(
                               children: <Widget>[
+                                Text("Mot de passe", style: Theme.of(context).textTheme.headline1),
                                 TextFormField(
                                   decoration: const InputDecoration(
                                       hintText: 'Mot de passe'),
                                 ),
                                 TextFormField(
                                     decoration: const InputDecoration(
-                                        hintText: 'Confirmation'))
+                                        hintText: 'Confirmation')
+                                ),
+                                CheckboxGroup(labels: <String>[
+                                  "Acceptation des CGU",
+                                ])
                               ],
                             ),
                           ),

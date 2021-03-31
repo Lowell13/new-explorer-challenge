@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:nec/connection/connection.dart';
 import 'package:nec/pages/DetailPage.dart';
-import 'package:nec/pages/maps/map_with_path.dart';
 import 'package:nec/proximity/Proximity.dart';
 import 'package:nec/pages/ListPage.dart';
 import 'package:nec/score/score.dart';
 import '../qsn/qsn.dart';
-import 'package:nec/pages/sing_in/sign_in.dart';
+import 'package:nec/sing_in/sign_in.dart';
 
 
 Map<String, WidgetBuilder> routes = {
@@ -30,6 +29,15 @@ Map<String, WidgetBuilder> routes = {
   },
   '/listPage': (context) {
     return ListPage();
+  },
+  '/national': (context) {
+    return National();
+  },
+  '/international': (context) {
+    return International();
+  },
+  '/mystery': (context) {
+    return Mystery();
   },
   '/map' : (context) {
     return MapWithPath();

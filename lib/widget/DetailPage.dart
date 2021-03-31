@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nec/style/theme.dart';
+import 'package:nec/widget/drawer.dart';
 
 class DetailPage extends StatelessWidget {
   @override
@@ -132,15 +134,19 @@ class DetailPage extends StatelessWidget {
       ),
     );
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: Column(
-        children: <Widget>[
-          topContent,
-          bottomContent
-        ],
+    return MaterialApp(
+      theme: mainTheme,
+      home: SafeArea(
+        child: Scaffold(
+          appBar: AppBar(),
+          drawer: drawer(context),
+          body: Column(
+            children: <Widget>[
+              topContent,
+              bottomContent
+            ],
+          ),
+        ),
       ),
     );
   }

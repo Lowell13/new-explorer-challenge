@@ -60,7 +60,7 @@ Widget drawer(context) {
           padding: const EdgeInsets.only(bottom: 15.0),
           child: GestureDetector(
             onTapUp: (_) {
-              Navigator.popAndPushNamed(context, "/france");
+              Navigator.popAndPushNamed(context, "/national");
             },
             child: Row(
               children: [
