@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:nec/pages/maps/secrets.dart';
+import 'package:nec/maps/secrets.dart';
+
 
 class MapWithPath extends StatefulWidget {
   @override
@@ -16,6 +17,7 @@ class _MapWithPathState extends State<MapWithPath> {
   final Geolocator _geolocator = Geolocator();
   final startAddressFocusNode = FocusNode();
   final destinationAddressFocusNode = FocusNode();
+
   // For storing the current position
   Position _currentPosition;
   Set<Marker> markers = {};
@@ -112,6 +114,7 @@ class _MapWithPathState extends State<MapWithPath> {
     points.add(LatLng(48.11420760662755, -1.6096251590697035));
     return points;
   }
+
   // Create the polylines for showing the route between two places
 
   _createPolylines(Marker start, Marker destination) async {
@@ -123,7 +126,8 @@ class _MapWithPathState extends State<MapWithPath> {
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
       Secrets.API_KEY, // Google Maps API Key
       PointLatLng(start.position.latitude, start.position.longitude),
-      PointLatLng(destination.position.latitude, destination.position.longitude),
+      PointLatLng(
+          destination.position.latitude, destination.position.longitude),
 
       travelMode: TravelMode.walking,
     );
@@ -244,11 +248,7 @@ class _MapWithPathState extends State<MapWithPath> {
                               );
                             },
                           ),
-                        )
-                        )
-                    )
-                )
-            ),
+                        ))))),
             SafeArea(
               child: Align(
                 alignment: Alignment.topCenter,
@@ -278,7 +278,6 @@ class _MapWithPathState extends State<MapWithPath> {
                                 if (polylines.isNotEmpty) polylines.clear();
                                 if (polylineCoordinates.isNotEmpty)
                                   polylineCoordinates.clear();
-
                               });
 
                               _calculateDistance();
