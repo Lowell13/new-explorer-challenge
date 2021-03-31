@@ -48,14 +48,6 @@ class Connection extends StatelessWidget {
                   Navigator.pushNamed(context, '/sign_in');
                 },
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.cyan,),
-                child: Text('map'),
-                onPressed: () {
-                  Navigator.pushNamed(context, '/map');
-                },
-              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [

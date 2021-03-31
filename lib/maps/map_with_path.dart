@@ -131,10 +131,7 @@ class _MapWithPathState extends State<MapWithPath> {
 
       travelMode: TravelMode.walking,
     );
-    print('coucou');
-    print(result.toString());
-    print(result.errorMessage);
-    print(result.status);
+
     // Adding the coordinates to the list
     if (result.points.isNotEmpty) {
       result.points.forEach((PointLatLng point) {
