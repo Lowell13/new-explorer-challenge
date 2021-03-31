@@ -124,7 +124,7 @@ class DetailPage extends StatelessWidget {
       )
     );
 
-    final bottomContent = Container(q
+    final bottomContent = Container(
       padding: EdgeInsets.all(30.0),
       child: Center(
         child: Column(
