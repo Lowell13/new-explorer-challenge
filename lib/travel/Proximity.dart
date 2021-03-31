@@ -42,7 +42,21 @@ class _ProximityState extends State<Proximity> {
                 drawer: drawer(context),
                 body: Column(children: <Widget>[
                   complete
-                      ? Navigator.of(context).pushNamed("/listPage")
+                      ? Expanded(
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 50,
+                        width: 200,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.cyan
+                          ),
+                          onPressed: () {
+                            Navigator.of(context).pushNamed("/listPage");
+                          },
+                          child: Text('Voir la liste de voyages'),
+                        )
+                      ))
                       : Expanded(
                     child: Stepper(
                       steps: [
@@ -100,8 +114,8 @@ class _ProximityState extends State<Proximity> {
                                 onPrimary: Colors.cyan),
                               child: Text('Suivant'),
                               onPressed: onStepContinue,
-                            ),
-                          ],
+                        ),
+                        ],
                         );
                       },
                       onStepContinue: next,
