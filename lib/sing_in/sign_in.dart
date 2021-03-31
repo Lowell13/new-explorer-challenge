@@ -133,13 +133,18 @@ class _SignInState extends State<SignIn> {
                             title: const Text(''),
                             content: Column(
                               children: <Widget>[
+                                Text("Mot de passe", style: Theme.of(context).textTheme.headline1),
                                 TextFormField(
                                   decoration: const InputDecoration(
                                       hintText: 'Mot de passe'),
                                 ),
                                 TextFormField(
                                     decoration: const InputDecoration(
-                                        hintText: 'Confirmation'))
+                                        hintText: 'Confirmation')
+                                ),
+                                CheckboxGroup(labels: <String>[
+                                  "Acceptation des CGU",
+                                ])
                               ],
                             ),
                           ),
