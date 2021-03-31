@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nec/connection/connection.dart';
 import 'package:nec/pages/DetailPage.dart';
+import 'package:nec/pages/maps/map_with_path.dart';
 import 'package:nec/proximity/Proximity.dart';
 import 'package:nec/pages/ListPage.dart';
 import 'package:nec/score/score.dart';
@@ -30,4 +31,7 @@ Map<String, WidgetBuilder> routes = {
   '/listPage': (context) {
     return ListPage();
   },
+  '/map' : (context) {
+    return MapWithPath();
+  }
 };
