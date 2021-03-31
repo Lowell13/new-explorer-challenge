@@ -45,6 +45,8 @@ class _ProximityState extends State<Proximity> {
                       ? Expanded(
                       child: Container(
                         alignment: Alignment.center,
+                      child: Container(
+                        alignment: Alignment.center,
                         height: 50,
                         width: 200,
                         child: ElevatedButton(
@@ -56,7 +58,7 @@ class _ProximityState extends State<Proximity> {
                           },
                           child: Text('Voir la liste de voyages'),
                         )
-                      ))
+                      )))
                       : Expanded(
                     child: Stepper(
                       steps: [
